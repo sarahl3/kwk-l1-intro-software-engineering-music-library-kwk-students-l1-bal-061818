@@ -1,19 +1,17 @@
-def list_artists 
-  music_hash{
-    "Ariana Grande" => "No tears left to cry"
-    "Drake"=> "Nice for what"
-  }
-  music_hash.each do |key,value|
-    puts"#{key}"
+def list_artists(lib)
+  lib.each_key do |artist|
+    puts artist
+  end
 end
 #1. Define a method named `list_artists`. This method should use the `each_key` method to iterate over the hash and return all the artists (the keys)
 # This method should accept a hash as an argument.
 
 #2. Define a method named `list_songs`. This method should use the `each_value` method to iterate over the music library hash and print out the name of the songs in the library.
 # This method should accept a hash as an argument.
-def list_songs
-  music_hash.each do |key,value|
-    puts"#{value}"
+def list_songs(lib)
+  lib.each_key do |song|
+    puts song
+  end
 end
   
 
